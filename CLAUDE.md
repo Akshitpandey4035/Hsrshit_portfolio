@@ -6,6 +6,21 @@ Personal portfolio for **Haze Visuals** (Director • CG Generalist • Editor �
 
 The layout was originally inspired by arseninovo.com, then deliberately changed so it is **not** a copy (different header, fonts, grid, footer, no handwritten elements). Keep it that way — don't reintroduce elements from that site.
 
+## FIRST: get the videos from the portfolio owner
+
+Video files are **not in this repo** (gitignored — too large for GitHub). On a fresh clone the home grid shows empty/black tiles until they're added. Before doing any other work, **ask the portfolio owner (Haze Visuals) to send these 6 videos, in this order**, and save them into `public/videos/` with exactly these names:
+
+| # | Project | Save as |
+|---|---|---|
+| 1 | Don't Be Dumb Tour | `dont-be-dumb-tour.mp4` |
+| 2 | What Would the Credit Card Department Do | `credit-card-department.mp4` |
+| 3 | Black Demarco | `black-demarco.mp4` |
+| 4 | Character Showcase | `character-showcase.mp4` |
+| 5 | Apple - AirPods Max | `apple-airpods-max.mp4` |
+| 6 | A16Z - Foundry | `a16z-foundry.mp4` |
+
+The order matters: it's the display order on the home page (set in `entries` in `data/site.js`). Files must be H.264 MP4. If the owner sends ProRes `.mov` files, convert them first (see "Adding a video" below). The same list is in `public/videos/README.md`.
+
 ## Stack & commands
 
 - **Next.js 16 (App Router) + React 19**, plain JavaScript (no TypeScript), plain CSS (no Tailwind, no CSS modules). npm.

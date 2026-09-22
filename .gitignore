@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+.env*.local
+
+# Videos are not committed (too large for GitHub). See public/videos/README.md.
+public/videos/*
+!public/videos/README.md

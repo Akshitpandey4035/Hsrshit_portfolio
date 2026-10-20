@@ -1,12 +1,7 @@
-import { Inter, JetBrains_Mono, Instrument_Serif } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { site } from "@/data/site";
 import "./globals.css";
-
-const body = Inter({ subsets: ["latin"], variable: "--font-body" });
-const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
-const serif = Instrument_Serif({ weight: "400", style: ["normal", "italic"], subsets: ["latin"], variable: "--font-serif" });
 
 export const metadata = {
   title: { default: `${site.logo} | ${site.roles.join(" • ")}`, template: `%s | ${site.logo}` },
@@ -20,7 +15,6 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${body.variable} ${mono.variable} ${serif.variable}`}
       suppressHydrationWarning
     >
       <head>

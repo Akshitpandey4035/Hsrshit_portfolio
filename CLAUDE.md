@@ -8,7 +8,7 @@ The layout was originally inspired by arseninovo.com, then deliberately changed 
 
 ## FIRST: get the videos from the portfolio owner
 
-Video files are **not in this repo** (gitignored — too large for GitHub). On a fresh clone the home grid shows empty/black tiles until they're added. Before doing any other work, **ask the portfolio owner (Haze Visuals) to send these 6 videos, in this order**, and save them into `public/videos/` with exactly these names:
+Videos are committed in `public/videos/` (compressed, each under GitHub's 100 MB limit); the home grid plays the small loops in `public/previews/`. Before doing any other work, **ask the portfolio owner (Haze Visuals) to send these 6 videos, in this order**, and save them into `public/videos/` with exactly these names:
 
 | # | Project | Save as |
 |---|---|---|
@@ -74,7 +74,7 @@ public/videos/            Project videos (served as /videos/...)
 
 Originals came from the owner's Downloads folder (copied, not moved).
 
-**Videos are NOT in git** (`public/videos/*` is gitignored). A fresh clone has only `public/videos/README.md`, which lists the exact file names to drop in. Get the files from the owner. Without them the tiles render empty/black.
+Videos and previews are committed to git. See `public/videos/README.md` for how to add one.
 
 ## Adding a video (workflow the owner uses)
 
@@ -130,7 +130,7 @@ Note: headless Chrome reports a dark system theme, so the site loads in dark mod
 ## Open issues / next steps
 
 1. **Heavy videos.** All grid videos autoplay, so the home page pulls ~550 MB. Make short compressed preview loops (2–5 MB, e.g. 720p, ~6 s) for `thumb`, and host full videos on YouTube/Vimeo (use embed URL as `video`) or a CDN.
-2. **Video hosting for deploy.** Videos are gitignored, so a Vercel deploy from GitHub will have none. Before deploying, host them externally (Vimeo/YouTube embeds, Cloudinary, Vercel Blob, etc.) and point `media` in `data/site.js` at those URLs. `character-showcase.mp4` (372 MB) and `black-demarco.mp4` (118 MB) should be compressed regardless.
+2. **Video hosting for deploy.** Videos are committed, so a Vercel deploy from GitHub serves them from `public/`. Watch hosting bandwidth limits.
 3. **Placeholder content** still to replace: email (`hello@hazevisuals.com`), Instagram URL, location, About bio + portrait, each project's description/credits/year/category.
 4. Contact page still shows a "Location: Based in Your City" line (owner removed it from the footer only; ask before removing).
 5. Footer still has a thin top border line (header one was removed at owner's request).

@@ -18,8 +18,8 @@ export default function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link href="/" className="logo">
-          <span className="logo-mark" aria-hidden="true" />
-          {site.logo}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/haze-logo.png" alt={`${site.name} — work`} width="100" height="50" />
         </Link>
 
         <div className="header-right">

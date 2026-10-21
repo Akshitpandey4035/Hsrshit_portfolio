@@ -4,7 +4,7 @@ import Signature from "@/components/Signature";
 import WordsStagger from "@/components/WordsStagger";
 import { site } from "@/data/site";
 
-export const metadata = { title: "About" };
+export const metadata = { title: "ABOUT" };
 
 export default function About() {
   return (

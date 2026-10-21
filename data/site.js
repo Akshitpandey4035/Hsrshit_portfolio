@@ -69,7 +69,7 @@ const entries = [
     year: "2026",
     media: "/videos/dont-be-dumb-tour.mp4",
     thumb: "/thumbs/dont-be-dumb-tour.jpg",
-    externalHref: "https://www.instagram.com/p/DcmIK2Vp9fm/",
+    externalHref: "https://www.instagram.com/reel/DchV4cvsFcO/",
     aspect: "4 / 3",
     videoWidth: 533,
     infoWidth: 427,

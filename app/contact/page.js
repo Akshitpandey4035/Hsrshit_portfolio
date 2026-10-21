@@ -1,7 +1,7 @@
 import { site } from "@/data/site";
 import GradientWaveText from "@/components/GradientWaveText";
 
-export const metadata = { title: "Contact" };
+export const metadata = { title: "CONTACT" };
 
 export default function Contact() {
   return (

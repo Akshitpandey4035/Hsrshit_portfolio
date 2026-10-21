@@ -4,7 +4,8 @@ import { site } from "@/data/site";
 import "./globals.css";
 
 export const metadata = {
-  title: { default: `${site.logo} | ${site.roles.join(" • ")}`, template: `%s | ${site.logo}` },
+  // Tab title is just the page: WORK (home), ABOUT, CONTACT or the project title. Pages set their own.
+  title: "WORK",
   description: `${site.name} — ${site.roles.join(", ")}`,
 };
 

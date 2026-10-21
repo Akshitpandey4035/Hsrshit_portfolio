@@ -15,7 +15,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const project = getProject(slug);
-  return { title: project?.title ?? "Not found" };
+  return { title: (project?.title ?? "Not found").toUpperCase() };
 }
 
 export default async function ProjectPage({ params }) {

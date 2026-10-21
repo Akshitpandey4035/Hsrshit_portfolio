@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+export const metadata = { title: "NOT FOUND" };
+
 export default function NotFound() {
   return (
     <div className="container" style={{ textAlign: "center", padding: "120px 0" }}>
